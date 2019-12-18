@@ -6,8 +6,9 @@ set.seed(5)
 #If you don't want to wait 4 hours do not run it!
 #training <- data[sample.int(10000, 100, replace = F),]
 #sizes <- seq(1,20,by=2)
+#decays <- 10^seq(-3, 0 , by = 0.01)
 #trc <- trainControl(method = "repeatedcv", number = 10, repeats = 10)
-#model.10x10CV <- train(V36~., data = training, method = 'nnet', maxit = 500, trace = FALSE, tuneGrid = expand.grid(.size=sizes ,.decay = 0), trControl = trc)
+#model.10x10CV <- train(V36~., data = training, method = 'nnet', maxit = 500, trace = FALSE, tuneGrid = expand.grid(.size=sizes ,.decay = decays), trControl = trc)
 
 #resulted model in model.10x10CVF.regul
 
